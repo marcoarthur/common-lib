@@ -26,7 +26,8 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.034"
+            "Module::Build::Tiny" : "0.034",
+            "perl" : "5.008005"
          }
       },
       "develop" : {
@@ -37,16 +38,37 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "List::Util" : "0",
+            "Mojo::Base" : "0",
+            "Moo" : "0",
+            "Moo::Role" : "0",
+            "Sub::Install" : "0",
+            "Type::Library" : "0",
+            "Type::Utils" : "0",
+            "Types::Standard" : "0",
+            "namespace::autoclean" : "0",
+            "strictures" : "2"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Test::Fatal" : "0",
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/marcoarthur/common-lib/issues"
+      },
+      "homepage" : "https://github.com/marcoarthur/common-lib",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/marcoarthur/common-lib.git",
+         "web" : "https://github.com/marcoarthur/common-lib"
+      }
+   },
    "version" : "0.01",
    "x_generated_by_perl" : "v5.28.2",
    "x_serialization_backend" : "Cpanel::JSON::XS version 4.21",
