@@ -18,7 +18,7 @@ __PACKAGE__->add_type(
         parent     => Str,
         constraint => $CODE_REF{$_},
         message    => sub {
-            sprintf '%s is not a User Name', Type::Tiny::_dd($_);
+            sprintf "%s is not a $_", Type::Tiny::_dd($_);
         },
     )
 ) for keys %CODE_REF;

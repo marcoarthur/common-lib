@@ -1,7 +1,7 @@
 package Common;
 
-use strict;
-use 5.008_005;
+use Moo;
+use Mojo::Base -strict, -signatures;
 our $VERSION = '0.01';
 
 1;
